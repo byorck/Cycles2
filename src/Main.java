@@ -61,13 +61,11 @@ public class Main {
         }
         System.out.println("Task № 7");
         int firstDateFriday = 3;
-        int currentDate = 0;
-        while (currentDate <= 31) {
-            currentDate += 1;
-            if ((currentDate - firstDateFriday) % 7 == 0) {
-                System.out.printf("Сегодня пятница, %s-е число. Необходимо подготовить отчет%n", currentDate);
+        int monthDayCount = 31;
+        while (firstDateFriday <= monthDayCount) {
+            System.out.printf("Сегодня пятница, %s-е число. Необходимо подготовить отчет%n", firstDateFriday);
+            firstDateFriday += 7;
             }
-        }
         System.out.println("Task № 8");
         int currentYear = 2025;
         int startYear = currentYear - 200;
